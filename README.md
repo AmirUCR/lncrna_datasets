@@ -23,7 +23,7 @@ All Python scripts must be sourced with `01_common.sh` first:
 > `source 01_common.sh && python 02_combine.py`
 
 # Adding new datasets
-This is how I would add a new dataset. Follow the same format as the other two: create a folder `03_new_dataset` with `03_new_dataset/src/00_vars.sh` and `03_new_dataset/src/01_common.sh` (you can just copy the `01_common.sh` from `01_fantom5.sh`). Place your variables in `00_vars.sh` and any other reusable functions you want in `01_common.sh`. Write your own pre-processing code for that dataset. Then, open `combine/src/combine.py` and add your dataset name and path to:
+This is how I would add a new dataset. Follow the same format as the other two: create a folder `03_new_dataset` with `03_new_dataset/src/00_vars.sh` and `03_new_dataset/src/01_common.sh` (you can just copy the `01_common.sh` from `01_fantom5.sh`). Place your variables in `00_vars.sh` and any other reusable functions you want in `01_common.sh`. Write your own pre-processing code for that dataset. Then, open `combine/src/02_combine.py` and add your dataset name and path to:
 
 ```
 # Add your dataset to this dictionary
